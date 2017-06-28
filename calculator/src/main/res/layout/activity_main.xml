@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="es.esy.gengod.calculator.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/CEButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="CE"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/SevenButton"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/BackSpaceButton"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/NineButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/CEButton"
+        app:layout_constraintRight_toRightOf="@+id/NineButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/SevenButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="7"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/FourButton"
+        app:layout_constraintRight_toRightOf="@+id/CEButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/CEButton" />
+
+    <Button
+        android:id="@+id/EightButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="8"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/FiveButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintRight_toLeftOf="@+id/MultButton"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="83dp"
+        app:layout_constraintLeft_toLeftOf="@+id/SevenButton" />
+
+    <Button
+        android:id="@+id/NineButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="9"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/SixButton"
+        app:layout_constraintRight_toRightOf="@+id/SixButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/SixButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/FourButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="4"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/OneButton"
+        app:layout_constraintRight_toRightOf="@+id/SevenButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/SevenButton" />
+
+    <Button
+        android:id="@+id/FiveButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="5"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/TwoButton"
+        app:layout_constraintRight_toRightOf="@+id/EightButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/EightButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/SixButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="6"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ThreeButton"
+        app:layout_constraintRight_toRightOf="@+id/ThreeButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/ThreeButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/OneButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/NegativeButton"
+        app:layout_constraintRight_toRightOf="@+id/FourButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/FourButton" />
+
+    <Button
+        android:id="@+id/TwoButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="2"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ZeroButton"
+        app:layout_constraintRight_toRightOf="@+id/FiveButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/FiveButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/ThreeButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="3"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ComaButton"
+        app:layout_constraintRight_toRightOf="@+id/ComaButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/ComaButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/NegativeButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="+-"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/OneButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ZeroButton"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/OneButton" />
+
+    <Button
+        android:id="@+id/ZeroButton"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:text="0"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/ComaButton"
+        app:layout_constraintRight_toRightOf="@+id/TwoButton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/TwoButton"
+        app:layout_constraintTop_toTopOf="@+id/ComaButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ComaButton"
+        android:layout_width="88dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="87dp"
+        android:text=","
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/ZeroButton"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/DivButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="/"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/MultButton"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp" />
+
+    <Button
+        android:id="@+id/MultButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="*"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/MinusButton"
+        app:layout_constraintRight_toRightOf="@+id/DivButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/DivButton" />
+
+    <Button
+        android:id="@+id/MinusButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="-"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/PlusButton"
+        app:layout_constraintRight_toRightOf="@+id/MultButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/MultButton" />
+
+    <Button
+        android:id="@+id/PlusButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/EqualsButton"
+        app:layout_constraintRight_toRightOf="@+id/MinusButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/MinusButton" />
+
+    <Button
+        android:id="@+id/EqualsButton"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:text="="
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/PlusButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ComaButton"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/PlusButton" />
+
+    <TextView
+        android:id="@+id/ResultView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/DivButton"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="33dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ExpressionView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/ResultView"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
